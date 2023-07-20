@@ -1,14 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - John Dae</title>
-    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="./input.css" />
 </head>
+
 <body class="w-full h-full bg-gray-950">
-    <div class="container">
-        <nav class="text-pink-500 bg-gray-950">navbar</nav>
+    <div id="home" class="main-container">
+        <!-- navbar -->
+        <header class="text-gray-400 bg-gray-950 shadow-gray-900 sticky top-0 z-50 shadow-2xl body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <div class="flex title-font font-medium items-center text-green-600 mb-4 md:mb-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+
+                    <span class="ml-3 text-xl">John Dae</span>
+                </div>
+                <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                    <a href="#home" class="mr-5 text-green-600 hover:text-white">Home</a>
+                    <a href="#projects" class="mr-5 text-green-600 hover:text-white">Projects</a>
+                    <a href="#services" class="mr-5 text-green-600 hover:text-white">Services</a>
+                    <a href="#contact" class="mr-5 text-green-600 hover:text-white">Contact</a>
+                </nav>
+                <button
+                    class="inline-flex text-white duration-300 hover:text-green-600 items-center bg-green-600 border-0 py-2 px-5 focus:outline-none hover:bg-white rounded text-base mt-4 md:mt-0">
+                    Resume
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-1" viewBox="-2 -2 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- hero -->
+        <section class="text-green-600 bg-inherit body-font">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div
+                    class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-green-600">
+                        Hey,
+                        <br class="hidden lg:inline-block" />
+                        My name is John Dae.
+                    </h1>
+                    <p class="mb-8 leading-relaxed">
+                        I am a full stack software developer who has been working for last
+                        5 years with tech industary experts. Now I am working as a remote
+                        software developer and started work as a freelancer to help
+                        creative and dreamer to make their dream true.
+                    </p>
+                    <div class="flex justify-center">
+                        <button
+                            class="inline-flex duration-300 text-white hover:text-green-600 bg-green-600 border-0 py-2 px-6 focus:outline-none hover:bg-white rounded text-lg">
+                            Upwork
+                        </button>
+                        <button
+                            class="ml-4 inline-flex duration-300  text-green-600 bg-white border-0 py-2 px-6 focus:outline-none hover:bg-green-600 hover:text-white rounded text-lg">
+                            Contact Now
+                        </button>
+                    </div>
+                </div>
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                    <img class="object-cover object-center rounded" alt="hero"
+                        src="https://media.asanify.com/wp-content/uploads/2022/04/26152013/blog-covers-2240-%C3%97-1500px-20.png" />
+                </div>
+            </div>
+        </section>
+        <!-- projects -->
+        <section id="projects" class="text-green-600 bg-gray-inherit body-fon">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-12">
+                    <h1 class="sm:text-3xl text-3xl font-medium title-font mb-4 text-green-600">
+                        Projects
+                    </h1>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-green-600">
+                        Building projects and listing them on your portfolio is the best
+                        way to show your talent, hardwork and commitment.
+                    </p>
+                </div>
+                <div class="flex flex-wrap -m-4">
+                    <div class="sm:w-full md:w-1/2 xl:w-1/3 lg:w-1/2 p-4">
+                        <div class="flex relative">
+                            <img alt="gallery"
+                                class="absolute inset-0 opacity-50 w-full h-full object-cover object-center"
+                                src="https://media.asanify.com/wp-content/uploads/2022/04/26152013/blog-covers-2240-%C3%97-1500px-20.png" />
+                            <div
+                                class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-80 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-green-500 mb-1">
+                                    React-Frontend Project
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-white mb-3">
+                                    NewsMonkey
+                                </h1>
+                                <p class="leading-relaxed">
+                                    NewsMonkey is a cutting-edge news platform utilizing AI to
+                                    provide personalized news experiences for users. The
+                                    platform encourages user engagement through ratings and
+                                    discussions. With a diverse range of categories, NewsMonkey
+                                    keeps readers informed and captivated. Its mobile app
+                                    ensures easy access to news on the go.
+                                </p>
+                                <div>
+                                    <button
+                                        class="my-4 mr-1 duration-300 inline-flex text-white bg-green-600 border-0 py-1 px-4 focus:outline-none hover:bg-white hover:text-green-600 rounded text-lg">
+                                        GitHub
+                                    </button>
+                                    <button
+                                        class="my-4 ml-1 duration-300 inline-flex text-green-600 bg-white border-0 py-1 px-4 focus:outline-none hover:bg-green-600 hover:text-white rounded text-lg">
+                                        Visit Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm:w-full md:w-1/2 xl:w-1/3 lg:w-1/2 p-4">
+                        <div class="flex relative">
+                            <img alt="gallery"
+                                class="absolute inset-0 opacity-50 w-full h-full object-cover object-center"
+                                src="https://media.asanify.com/wp-content/uploads/2022/04/26152013/blog-covers-2240-%C3%97-1500px-20.png" />
+                            <div
+                                class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-80 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-green-500 mb-1">
+                                    React-FullStack Project
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-white mb-3">
+                                    INotes
+                                </h1>
+                                <p class="leading-relaxed">
+                                    Introducing iNotes, a productivity app designed for seamless
+                                    note-taking and organization. With a user-friendly
+                                    interface, to-do lists, and important information
+                                    effortlessly. iNotes ensures synchronization across devices,
+                                    ensuring you have your notes wherever you go. Say goodbye to
+                                    scattered thoughts and stay organized with iNotes.
+                                </p>
+                                <div>
+                                    <button
+                                        class="my-4 mr-1 duration-300 inline-flex text-white bg-green-600 border-0 py-1 px-4 focus:outline-none hover:bg-white hover:text-green-600 rounded text-lg">
+                                        GitHub
+                                    </button>
+                                    <button
+                                        class="my-4 ml-1 duration-300 inline-flex text-green-600 bg-white border-0 py-1 px-4 focus:outline-none hover:bg-green-600 hover:text-white rounded text-lg">
+                                        Visit Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm:w-full md:w-1/2 xl:w-1/3 lg:w-1/2 p-4">
+                        <div class="flex relative">
+                            <img alt="gallery"
+                                class="absolute inset-0 opacity-50 w-full h-full object-cover object-center"
+                                src="https://media.asanify.com/wp-content/uploads/2022/04/26152013/blog-covers-2240-%C3%97-1500px-20.png" />
+                            <div
+                                class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-80 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-green-500 mb-1">
+                                    React-FullStack Project
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-white mb-3">
+                                    VisionVault
+                                </h1>
+                                <p class="leading-relaxed">
+                                    VisionVault is a multimedia content sharing and storage
+                                    platform. It provides users with a platform to upload,
+                                    organize, and share various types of visual content, such as
+                                    images, artwork, photographs, videos, and more. Users can
+                                    create collections, curate their content, and connect with
+                                    others who share similar interests.
+                                </p>
+                                <div>
+                                    <button
+                                        class="my-4 mr-1 duration-300 inline-flex text-white bg-green-600 border-0 py-1 px-4 focus:outline-none hover:bg-white hover:text-green-600 rounded text-lg">
+                                        GitHub
+                                    </button>
+                                    <button
+                                        class="my-4 ml-1 duration-300 inline-flex text-green-600 bg-white border-0 py-1 px-4 focus:outline-none hover:bg-green-600 hover:text-white rounded text-lg">
+                                        Visit Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm:w-full md:w-1/2 xl:w-1/3 lg:w-1/2 p-4">
+                        <div class="flex relative">
+                            <img alt="gallery"
+                                class="absolute inset-0 opacity-50 w-full h-full object-cover object-center"
+                                src="https://media.asanify.com/wp-content/uploads/2022/04/26152013/blog-covers-2240-%C3%97-1500px-20.png" />
+                            <div
+                                class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-80 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-green-500 mb-1">
+                                    React-Frontend Project
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-white mb-3">
+                                    TextUtils
+                                </h1>
+                                <p class="leading-relaxed">
+                                    TextUtils is a versatile toolset for text manipulation in
+                                    software development. It provides functions for string
+                                    operations, formatting, and parsing text data. Developers
+                                    rely on TextUtils for efficient text processing tasks. Its
+                                    features include string trimming, case conversions, and
+                                    string splitting. With TextUtils, working with text becomes
+                                    more streamlined and effective.
+                                </p>
+                                <div>
+                                    <button
+                                        class="my-4 mr-1 duration-300 inline-flex text-white bg-green-600 border-0 py-1 px-4 focus:outline-none hover:bg-white hover:text-green-600 rounded text-lg">
+                                        GitHub
+                                    </button>
+                                    <button
+                                        class="my-4 ml-1 duration-300 inline-flex text-green-600 bg-white border-0 py-1 px-4 focus:outline-none hover:bg-green-600 hover:text-white rounded text-lg">
+                                        Visit Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm:w-full md:w-1/2 xl:w-1/3 lg:w-1/2 p-4">
+                        <div class="flex relative">
+                            <img alt="gallery"
+                                class="absolute inset-0 opacity-50 w-full h-full object-cover object-center"
+                                src="https://media.asanify.com/wp-content/uploads/2022/04/26152013/blog-covers-2240-%C3%97-1500px-20.png" />
+                            <div
+                                class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-80 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-green-500 mb-1">
+                                    React-FullStack Project
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-white mb-3">
+                                    Pdf-Merger
+                                </h1>
+                                <p class="leading-relaxed">
+                                    A PDF merger is a online tool designed to combine or merge
+                                    multiple PDF files into a single PDF document. With a PDF
+                                    merger, users can easily merge pages from different PDF
+                                    files, and create a cohesive, consolidated document. This
+                                    process is particularly useful when you want to merge
+                                    documents, reports, or presentations into one cohesive file,
+                                    simplifying sharing and distribution.
+                                </p>
+                                <div>
+                                    <button
+                                        class="my-4 mr-1 duration-300 inline-flex text-white bg-green-600 border-0 py-1 px-4 focus:outline-none hover:bg-white hover:text-green-600 rounded text-lg">
+                                        GitHub
+                                    </button>
+                                    <button
+                                        class="my-4 ml-1 duration-300 inline-flex text-green-600 bg-white border-0 py-1 px-4 focus:outline-none hover:bg-green-600 hover:text-white rounded text-lg">
+                                        Visit Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm:w-full md:w-1/2 xl:w-1/3 lg:w-1/2 p-4">
+                        <div class="flex relative">
+                            <img alt="gallery"
+                                class="absolute inset-0 opacity-50 w-full h-full object-cover object-center"
+                                src="https://media.asanify.com/wp-content/uploads/2022/04/26152013/blog-covers-2240-%C3%97-1500px-20.png" />
+                            <div
+                                class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-80 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-green-500 mb-1">
+                                    React-FullStack Project
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-white mb-3">
+                                    Musify
+                                </h1>
+                                <p class="leading-relaxed">
+                                    Musify, users can access an extensive library of songs,
+                                    albums, and playlists, catering to every mood and occasion.
+                                    Musify's sleek and intuitive interface makes navigation a
+                                    breeze, and its offline mode allows uninterrupted listening
+                                    on the go. Whether discovering new artists or creating the
+                                    perfect playlist, Musify brings the joy of music right to
+                                    your fingertips.
+                                </p>
+                                <div>
+                                    <button
+                                        class="my-4 mr-1 duration-300 inline-flex text-white bg-green-600 border-0 py-1 px-4 focus:outline-none hover:bg-white hover:text-green-600 rounded text-lg">
+                                        GitHub
+                                    </button>
+                                    <button
+                                        class="my-4 ml-1 duration-300 inline-flex text-green-600 bg-white border-0 py-1 px-4 focus:outline-none hover:bg-green-600 hover:text-white rounded text-lg">
+                                        Visit Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- services -->
+        <section id="services" class="bg-inherit body-font overflow-hidden">
+            <div class="container px-5 pt-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-20">
+                    <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-green-600">
+                        Services
+                    </h1>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-green-600 mb-4">
+                        These are some serivces, I am providing currently.
+                    </p>
+
+                    <div class="mx-auto py-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                            <div
+                                class="flex flex-col items-start border-gray-900 border-[1px] bg-gray-950 text-green-600 rounded-lg p-4">
+                                <h2 class="text-2xl underline underline-offset-4 font-semibold mb-2">Frontend
+                                    Development</h2>
+                                <p class="text-start">Creating interactive and responsive user interfaces with HTML,
+                                    CSS, and JavaScript. Implementing cutting-edge design trends and optimizing user
+                                    experience. We focus on delivering intuitive and visually appealing interfaces to
+                                    captivate your audience.</p>
+                                <small class="mt-3 mb-1 rounded text-white bg-green-700 py-1 px-3 text-xs">No. of
+                                    Projects I have build : 60 </small>
+                                <div class="my-3">
+                                    <button
+                                        class="px-3 text-base py-1 duration-300 rounded mr-1 text-white hover:text-green-600 hover:bg-white bg-green-600">Upwork</button>
+                                    <button
+                                        class="px-3 text-base py-1 duration-300 rounded ml-1 text-green-600 bg-white hover:bg-green-600 hover:text-white">Contact
+                                        Now</button>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col items-start border-gray-900 border-[1px] bg-gray-950 text-green-600 rounded-lg p-4">
+                                <h2 class="text-2xl underline underline-offset-4 font-semibold mb-2">Backend Development
+                                </h2>
+                                <p class="text-start">Building robust server-side applications using frameworks like
+                                    Node.js and Django. Our backend team ensures scalable, efficient, and secure
+                                    solutions for seamless data handling and system functionalities.</p>
+                                <small class="mt-3 mb-1 rounded text-white bg-green-700 py-1 px-3 text-xs">No. of
+                                    Projects I have build : 60 </small>
+                                <div class="my-3">
+                                    <button
+                                        class="px-3 text-base py-1 duration-300 rounded mr-1 text-white hover:text-green-600 hover:bg-white bg-green-600">Upwork</button>
+                                    <button
+                                        class="px-3 text-base py-1 duration-300 rounded ml-1 text-green-600 bg-white hover:bg-green-600 hover:text-white">Contact
+                                        Now</button>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col items-start border-gray-900 border-[1px] bg-gray-950 text-green-600 rounded-lg p-4">
+                                <h2 class="text-2xl underline underline-offset-4 font-semibold mb-2">Fullstack
+                                    Development</h2>
+                                <p class="text-start">Combining frontend and backend skills to develop end-to-end
+                                    applications. Our fullstack developers bridge the gap between user interfaces and
+                                    server-side logic, offering comprehensive solutions that bring your ideas to life.
+                                </p>
+                                <small class="mt-3 mb-1 rounded text-white bg-green-700 py-1 px-3 text-xs">No. of
+                                    Projects I have build : 60 </small>
+                                <div class="my-3">
+                                    <button
+                                        class="px-3 text-base py-1 duration-300 rounded mr-1 text-white hover:text-green-600 hover:bg-white bg-green-600">Upwork</button>
+                                    <button
+                                        class="px-3 text-base py-1 duration-300 rounded ml-1 text-green-600 bg-white hover:bg-green-600 hover:text-white">Contact
+                                        Now</button>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col items-start border-gray-900 border-[1px] bg-gray-950 text-green-600 rounded-lg p-4">
+                                <h2 class="text-2xl underline underline-offset-4 font-semibold mb-2">UI/UX Designer</h2>
+                                <p class="text-start">Designing intuitive and visually appealing user interfaces for
+                                    seamless user experiences. Our UI/UX designers pay meticulous attention to user
+                                    interaction, creating wireframes and prototypes that drive engagement and user
+                                    satisfaction</p>
+                                <small class="mt-3 mb-1 rounded text-white bg-green-700 py-1 px-3 text-xs">No. of
+                                    Projects I have build : 60 </small>
+                                <div class="my-3">
+                                    <button
+                                        class="px-3 text-base py-1 duration-300 rounded mr-1 text-white hover:text-green-600 hover:bg-white bg-green-600">Upwork</button>
+                                    <button
+                                        class="px-3 text-base py-1 duration-300 rounded ml-1 text-green-600 bg-white hover:bg-green-600 hover:text-white">Contact
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- contact -->
+        <section id="contact" class="pt-24 text-gray-400 bg-gray-inherit body-font relative">
+            <h1 class="text-center sm:text-4xl text-3xl font-medium title-font mb-6 text-green-600">
+                Contact
+            </h1>
+            <div class="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
+                <div
+                    class="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                    <iframe width="100%" height="100%" title="map" class="absolute inset-0" frameborder="0"
+                        marginheight="0" marginwidth="0" scrolling="no"
+                        src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+                        style="filter: grayscale(1) contrast(1.2) opacity(0.16);"></iframe>
+                    <div class="bg-gray-950 relative flex flex-wrap py-6 rounded shadow-md">
+                        <div class="lg:w-1/2 px-6">
+                            <h2 class="title-font font-semibold text-white tracking-widest text-xs">ADDRESS</h2>
+                            <p class="mt-1 text-green-700">Photo booth tattooed prism, portland taiyaki hoodie neutra
+                                typewriter</p>
+                        </div>
+                        <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                            <h2 class="title-font font-semibold text-white tracking-widest text-xs">EMAIL</h2>
+                            <a class="text-green-600 leading-relaxed">johndae@gmail.com</a>
+                            <h2 class="title-font font-semibold text-white tracking-widest text-xs mt-4">PHONE</h2>
+                            <p class="leading-relaxed text-green-700">123-456-7890</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                    <h2 class="text-green-600 text-lg mb-1 font-semibold title-font">Contact</h2>
+                    <p class="leading-relaxed mb-5 text-green-600">Fill in your info. in the form and I will get back to
+                        you soon.</p>
+                    <form action="https://formspree.io/f/mknlgzgy" method="POST">
+                        <div class="relative mb-4">
+                            <label for="name" class="leading-7 text-sm text-green-600">Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full bg-inherit rounded border border-green-800 focus:border-green-500 focus:ring-2 focus:ring-green-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                        <div class="relative mb-4">
+                            <label for="email" class="leading-7 text-sm text-green-600">Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full bg-inherit rounded border border-green-800 focus:border-green-500 focus:ring-2 focus:ring-green-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                        <div class="relative mb-4">
+                            <label for="message" class="leading-7 text-sm text-green-800">Message</label>
+                            <textarea id="message" name="message"
+                                class="w-full bg-inherit rounded border border-green-700 focus:border-green-500 focus:ring-2 focus:ring-green-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                        </div>
+                        <button
+                            class="text-green-600 bg-white border-0 py-2 px-6 focus:outline-none hover:bg-green-600 duration-500 hover:font-semibold hover:scale-105 hover:text-white rounded text-lg">Submit</button>
+                        <p class="text-xs text-green-600 text-opacity-90 mt-3">I will get back to you soon.</p>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="text-gray-400 bg-inherit body-font">
+            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-green-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        class="w-10 h-10 text-white p-2 bg-green-600 rounded-full" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span class="ml-3 text-xl">John Dae</span>
+                </a>
+                <p class="text-sm text-green-700 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-green-800 sm:py-2 sm:mt-0 mt-4">©
+                    2023 JohnDae —
+                    <a href="https://twitter.com/knyttneve" class="text-green-600 ml-1" target="_blank"
+                        rel="noopener noreferrer">@knyttneve</a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                    <a class="text-green-400 hover:scale-125">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5 cursor-pointer" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-green-400 hover:scale-125">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5 cursor-pointer" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-green-400 hover:scale-125">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5 cursor-pointer" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-green-400 hover:scale-125">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5 cursor-pointer" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </footer>
     </div>
 </body>
+
 </html>
